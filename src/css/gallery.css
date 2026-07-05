@@ -1,0 +1,27 @@
+.gallery {
+  max-width: 1128px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  margin: 24px auto;
+}
+.gallery-item:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.gallery-item {
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.gallery-link {
+}
+.gallery-image {
+  object-fit: cover;
+  width: 360px;
+  height: 200px;
+}
